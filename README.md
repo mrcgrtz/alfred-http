@@ -1,5 +1,5 @@
 # alfred-http
-An Alfred workflow to quickly lookup HTTP status codes.
+An [Alfred](https://www.alfredapp.com/) workflow to quickly lookup HTTP status codes.
 Opens [httpstatuses.com](https://httpstatuses.com/) for more details.
 
 ## Install
