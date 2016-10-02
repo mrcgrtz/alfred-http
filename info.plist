@@ -69,7 +69,7 @@
 				<key>spaces</key>
 				<string></string>
 				<key>url</key>
-				<string>https://httpstatuses.com//{query}</string>
+				<string>https://httpstatuses.com/{query}</string>
 				<key>utf8</key>
 				<true/>
 			</dict>
@@ -101,7 +101,7 @@
 		</dict>
 	</dict>
 	<key>version</key>
-	<string>1.0</string>
+	<string>1.1</string>
 	<key>webaddress</key>
 	<string>https://marcgoertz.de/</string>
 </dict>
