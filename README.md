@@ -5,7 +5,7 @@ Opens [httpstatuses.com](https://httpstatuses.com/) for more details.
 
 ## Install
 
-Download the http-status.alfredworkflow and double-click to install.
+Download the [http-status.alfredworkflow](https://github.com/Dreamseer/alfred-http/raw/master/http-status.alfredworkflow) file and double-click to install.
 
 ## Usage
 
