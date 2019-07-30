@@ -1,0 +1,24 @@
+root = true
+
+[*]
+# indent using tabs
+indent_style = tab
+indent_size = tab
+tab_width = 2
+# Unix-style newlines with a newline ending every file
+end_of_line = lf
+insert_final_newline = true
+# use UTF-8 without BOM
+charset = utf-8
+# remove any trailing whitespace
+trim_trailing_whitespace = true
+
+[*.md]
+# do not remove trailing spaces for line-breaks
+trim_trailing_whitespace = false
+
+[package.json]
+# The indent size used in the `package.json` file cannot be changed
+# https://github.com/npm/npm/pull/3180#issuecomment-16336516
+indent_style = space
+indent_size = 2

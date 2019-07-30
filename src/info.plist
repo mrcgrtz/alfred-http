@@ -1,30 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-<dict>
-  <key>version</key>
-  <string>1.1</string>
-  <key>name</key>
-  <string>HTTP Status</string>
-  <key>description</key>
-  <string>HTTP Status Codes</string>
-  <key>readme</key>
-  <string>An Alfred workflow to quickly lookup HTTP status codes.</string>
-  <key>category</key>
-  <string>Internet</string>
-  <key>createdby</key>
-  <string>Marc Görtz</string>
-  <key>webaddress</key>
-  <string>https://marcgoertz.de/</string>
-	<key>bundleid</key>
-	<string>de.marcgoertz.http</string>
-	<key>connections</key>
 	<dict>
-		<key>3D0116D7-BB69-4139-B322-2839D0812D7E</key>
-		<array/>
-		<key>57D47D53-06C7-45E4-99ED-BE53CD7C3E70</key>
+		<key>version</key>
+		<string>1.2.0</string>
+		<key>name</key>
+		<string>HTTP Status</string>
+		<key>description</key>
+		<string>HTTP Status Codes</string>
+		<key>readme</key>
+		<string>An Alfred workflow to quickly lookup HTTP status codes.</string>
+		<key>category</key>
+		<string>Internet</string>
+		<key>createdby</key>
+		<string>Marc Görtz</string>
+		<key>webaddress</key>
+		<string>https://marcgoertz.de/</string>
+		<key>bundleid</key>
+		<string>de.marcgoertz.http</string>
+		<key>disabled</key>
+		<false/>
+		<key>objects</key>
 		<array>
 			<dict>
+				<key>config</key>
+				<dict>
+					<key>argumenttype</key>
+					<integer>0</integer>
+					<key>fixedorder</key>
+					<true/>
+					<key>items</key>
+					<string>[{"imagefile":"e693dfeb77bb6d4f02a3766a9795dea7f7095a6c.png","title":"100 Continue","arg":"100","subtitle":"HTTP\/1.1; RFC 2616"},{"imagefile":"e693dfeb77bb6d4f02a3766a9795dea7f7095a6c.png","title":"101 Switching Protocols","arg":"101","subtitle":"HTTP\/1.1; RFC 2616"},{"imagefile":"e693dfeb77bb6d4f02a3766a9795dea7f7095a6c.png","title":"102 Processing","arg":"102","subtitle":"WebDAV; RFC 2518"},{"imagefile":"52f4d8c7f9b983c02d74b87c5e4f52aa23d87f96.png","title":"200 OK","arg":"200","subtitle":"HTTP\/1.0; HTTP\/1.1; RFC 2616"},{"imagefile":"52f4d8c7f9b983c02d74b87c5e4f52aa23d87f96.png","title":"201 Created","arg":"201","subtitle":"HTTP\/1.0; HTTP\/1.1; RFC 2616"},{"imagefile":"52f4d8c7f9b983c02d74b87c5e4f52aa23d87f96.png","title":"202 Accepted","arg":"202","subtitle":"HTTP\/1.0; HTTP\/1.1; RFC 2616"},{"imagefile":"52f4d8c7f9b983c02d74b87c5e4f52aa23d87f96.png","title":"203 Non-Authoritative Information","arg":"203","subtitle":"HTTP\/1.1; RFC 2616"},{"imagefile":"52f4d8c7f9b983c02d74b87c5e4f52aa23d87f96.png","title":"204 No Content","arg":"204","subtitle":"HTTP\/1.0; HTTP\/1.1; RFC 2616"},{"imagefile":"52f4d8c7f9b983c02d74b87c5e4f52aa23d87f96.png","title":"205 Reset Content","arg":"205","subtitle":"HTTP\/1.1; RFC 2616"},{"imagefile":"52f4d8c7f9b983c02d74b87c5e4f52aa23d87f96.png","title":"206 Partial Content","arg":"206","subtitle":"HTTP\/1.1; RFC 2616; RFC 7233"},{"imagefile":"52f4d8c7f9b983c02d74b87c5e4f52aa23d87f96.png","title":"207 Multi-Status","arg":"207","subtitle":"WebDAV; RFC 4918"},{"imagefile":"52f4d8c7f9b983c02d74b87c5e4f52aa23d87f96.png","title":"208 Already Reported","arg":"208","subtitle":"WebDAV; RFC 5842"},{"imagefile":"52f4d8c7f9b983c02d74b87c5e4f52aa23d87f96.png","title":"226 IM Used","arg":"226","subtitle":"RFC 3229"},{"imagefile":"912da0eb59cdb42f27a6c39e704a57c991210f11.png","title":"300 Multiple Choices","arg":"300","subtitle":"HTTP\/1.0; HTTP\/1.1; RFC 2616"},{"imagefile":"912da0eb59cdb42f27a6c39e704a57c991210f11.png","title":"301 Moved Permanently","arg":"301","subtitle":"HTTP\/1.0; HTTP\/1.1; RFC 2616"},{"imagefile":"912da0eb59cdb42f27a6c39e704a57c991210f11.png","title":"302 Found","arg":"302","subtitle":"HTTP\/1.1; RFC 2616"},{"imagefile":"912da0eb59cdb42f27a6c39e704a57c991210f11.png","title":"303 See Other","arg":"303","subtitle":"HTTP\/1.1; RFC 2616"},{"imagefile":"912da0eb59cdb42f27a6c39e704a57c991210f11.png","title":"304 Not Modified","arg":"304","subtitle":"HTTP\/1.0; HTTP\/1.1; RFC 2616; RFC 7232"},{"imagefile":"912da0eb59cdb42f27a6c39e704a57c991210f11.png","title":"305 Use Proxy","arg":"305","subtitle":"HTTP\/1.1; RFC 2616"},{"imagefile":"912da0eb59cdb42f27a6c39e704a57c991210f11.png","title":"306 Switch Proxy","arg":"306"},{"imagefile":"912da0eb59cdb42f27a6c39e704a57c991210f11.png","title":"307 Temporary Redirect","arg":"307","subtitle":"HTTP\/1.1; RFC 2616"},{"imagefile":"912da0eb59cdb42f27a6c39e704a57c991210f11.png","title":"308 Permanent Redirect","arg":"308","subtitle":"RFC 7538"},{"imagefile":"40a3d7f369161f74d44be256e00afeda0117a32a.png","title":"400 Bad Request","arg":"400","subtitle":"HTTP\/1.0; HTTP\/1.1; RFC 2616"},{"imagefile":"40a3d7f369161f74d44be256e00afeda0117a32a.png","title":"401 Unauthorized","arg":"401","subtitle":"HTTP\/1.0; HTTP\/1.1; RFC 2616; RFC 7235"},{"imagefile":"40a3d7f369161f74d44be256e00afeda0117a32a.png","title":"402 Payment Required","arg":"402","subtitle":"HTTP\/1.1; RFC 2616"},{"imagefile":"40a3d7f369161f74d44be256e00afeda0117a32a.png","title":"403 Forbidden","arg":"403","subtitle":"HTTP\/1.0; HTTP\/1.1; RFC 2616"},{"imagefile":"40a3d7f369161f74d44be256e00afeda0117a32a.png","title":"404 Not Found","arg":"404","subtitle":"HTTP\/1.0; HTTP\/1.1; RFC 2616"},{"imagefile":"40a3d7f369161f74d44be256e00afeda0117a32a.png","title":"405 Method Not Allowed","arg":"405","subtitle":"HTTP\/1.1; RFC 2616"},{"imagefile":"40a3d7f369161f74d44be256e00afeda0117a32a.png","title":"406 Not Acceptable","arg":"406","subtitle":"HTTP\/1.1; RFC 2616"},{"imagefile":"40a3d7f369161f74d44be256e00afeda0117a32a.png","title":"407 Proxy Authentication Required","arg":"407","subtitle":"HTTP\/1.1; RFC 2616; RFC 7235"},{"imagefile":"40a3d7f369161f74d44be256e00afeda0117a32a.png","title":"408 Request Timeout","arg":"408","subtitle":"HTTP\/1.1; RFC 2616"},{"imagefile":"40a3d7f369161f74d44be256e00afeda0117a32a.png","title":"409 Conflict","arg":"409","subtitle":"HTTP\/1.1; RFC 2616"},{"imagefile":"40a3d7f369161f74d44be256e00afeda0117a32a.png","title":"410 Gone","arg":"410","subtitle":"HTTP\/1.1; RFC 2616"},{"imagefile":"40a3d7f369161f74d44be256e00afeda0117a32a.png","title":"411 Length Required","arg":"411","subtitle":"HTTP\/1.1; RFC 2616"},{"imagefile":"40a3d7f369161f74d44be256e00afeda0117a32a.png","title":"412 Precondition Failed","arg":"412","subtitle":"HTTP\/1.1; RFC 2616; RFC 7232"},{"imagefile":"40a3d7f369161f74d44be256e00afeda0117a32a.png","title":"413 Payload Too Large","arg":"413","subtitle":"HTTP\/1.1; RFC 2616; RFC 7231"},{"imagefile":"40a3d7f369161f74d44be256e00afeda0117a32a.png","title":"414 URI Too Long","arg":"414","subtitle":"HTTP\/1.1; RFC 2616; RFC 7231"},{"imagefile":"40a3d7f369161f74d44be256e00afeda0117a32a.png","title":"415 Unsupported Media Type","arg":"415","subtitle":"HTTP\/1.1; RFC 2616"},{"imagefile":"40a3d7f369161f74d44be256e00afeda0117a32a.png","title":"416 Range Not Satisfiable","arg":"416","subtitle":"HTTP\/1.1; RFC 2616; RFC 7233"},{"imagefile":"40a3d7f369161f74d44be256e00afeda0117a32a.png","title":"417 Expectation Failed","arg":"417","subtitle":"HTTP\/1.1; RFC 2616"},{"imagefile":"40a3d7f369161f74d44be256e00afeda0117a32a.png","title":"418 I'm a teapot","arg":"418","subtitle":"RFC 2324"},{"imagefile":"40a3d7f369161f74d44be256e00afeda0117a32a.png","title":"421 Misdirected Request","arg":"421","subtitle":"RFC 7540"},{"imagefile":"40a3d7f369161f74d44be256e00afeda0117a32a.png","title":"422 Unprocessable Entity","arg":"422","subtitle":"WebDAV; RFC 4918"},{"imagefile":"40a3d7f369161f74d44be256e00afeda0117a32a.png","title":"423 Locked","arg":"423","subtitle":"WebDAV; RFC 4918"},{"imagefile":"40a3d7f369161f74d44be256e00afeda0117a32a.png","title":"424 Failed Dependency","arg":"424","subtitle":"WebDAV; RFC 4918"},{"imagefile":"40a3d7f369161f74d44be256e00afeda0117a32a.png","title":"426 Upgrade Required","arg":"426"},{"imagefile":"40a3d7f369161f74d44be256e00afeda0117a32a.png","title":"428 Precondition Required","arg":"428","subtitle":"RFC 6585"},{"imagefile":"40a3d7f369161f74d44be256e00afeda0117a32a.png","title":"429 Too Many Requests","arg":"429","subtitle":"RFC 6585"},{"imagefile":"40a3d7f369161f74d44be256e00afeda0117a32a.png","title":"431 Request Header Fields Too Large","arg":"431","subtitle":"RFC 6585"},{"imagefile":"40a3d7f369161f74d44be256e00afeda0117a32a.png","title":"451 Unavailable For Legal Reasons","arg":"451"},{"imagefile":"4fd2f6e58877424c90a92e44a61aef61eee99998.png","title":"500 Internal Server Error","arg":"500","subtitle":"HTTP\/1.0; HTTP\/1.1; RFC 2616"},{"imagefile":"4fd2f6e58877424c90a92e44a61aef61eee99998.png","title":"501 Not Implemented","arg":"501","subtitle":"HTTP\/1.0; HTTP\/1.1; RFC 2616"},{"imagefile":"4fd2f6e58877424c90a92e44a61aef61eee99998.png","title":"502 Bad Gateway","arg":"502","subtitle":"HTTP\/1.0; HTTP\/1.1; RFC 2616"},{"imagefile":"4fd2f6e58877424c90a92e44a61aef61eee99998.png","title":"503 Service Unavailable","arg":"503","subtitle":"HTTP\/1.0; HTTP\/1.1; RFC 2616"},{"imagefile":"4fd2f6e58877424c90a92e44a61aef61eee99998.png","title":"504 Gateway Timeout","arg":"504","subtitle":"HTTP\/1.1; RFC 2616"},{"imagefile":"4fd2f6e58877424c90a92e44a61aef61eee99998.png","title":"505 HTTP Version Not Supported","arg":"505","subtitle":"HTTP\/1.1; RFC 2616"},{"imagefile":"4fd2f6e58877424c90a92e44a61aef61eee99998.png","title":"506 Variant Also Negotiates","arg":"506","subtitle":"RFC 2295"},{"imagefile":"4fd2f6e58877424c90a92e44a61aef61eee99998.png","title":"507 Insufficient Storage","arg":"507","subtitle":"WebDAV; RFC 4918"},{"imagefile":"4fd2f6e58877424c90a92e44a61aef61eee99998.png","title":"508 Loop Detected","arg":"508","subtitle":"WebDAV; RFC 5842"},{"imagefile":"4fd2f6e58877424c90a92e44a61aef61eee99998.png","title":"510 Not Extended","arg":"510","subtitle":"RFC 2774"},{"imagefile":"4fd2f6e58877424c90a92e44a61aef61eee99998.png","title":"511 Network Authentication Required","arg":"511","subtitle":"RFC 6585"}]</string>
+					<key>keyword</key>
+					<string>http</string>
+					<key>runningsubtext</key>
+					<string></string>
+					<key>subtext</key>
+					<string>Enter a status code or value to view details.</string>
+					<key>title</key>
+					<string>HTTP Status</string>
+					<key>withspace</key>
+					<true/>
+				</dict>
+				<key>type</key>
+				<string>alfred.workflow.input.listfilter</string>
+				<key>uid</key>
+				<string>57D47D53-06C7-45E4-99ED-BE53CD7C3E70</string>
+				<key>version</key>
+				<integer>1</integer>
+			</dict>
+			<dict>
+				<key>config</key>
+				<dict>
+					<key>browser</key>
+					<string></string>
+					<key>spaces</key>
+					<string></string>
+					<key>url</key>
+					<string>https://httpstatuses.com/{query}</string>
+					<key>utf8</key>
+					<true/>
+				</dict>
+				<key>type</key>
+				<string>alfred.workflow.action.openurl</string>
+				<key>uid</key>
+				<string>3D0116D7-BB69-4139-B322-2839D0812D7E</string>
+				<key>version</key>
+				<integer>1</integer>
+			</dict>
+		</array>
+		<key>connections</key>
+		<dict>
+			<key>3D0116D7-BB69-4139-B322-2839D0812D7E</key>
+			<array/>
+			<key>57D47D53-06C7-45E4-99ED-BE53CD7C3E70</key>
+			<array>
+				<dict>
 				<key>destinationuid</key>
 				<string>3D0116D7-BB69-4139-B322-2839D0812D7E</string>
 				<key>modifiers</key>
@@ -33,76 +84,25 @@
 				<string></string>
 				<key>vitoclose</key>
 				<false/>
-			</dict>
-		</array>
-	</dict>
-	<key>disabled</key>
-	<false/>
-	<key>objects</key>
-	<array>
+				</dict>
+			</array>
+		</dict>
+		<key>uidata</key>
 		<dict>
-			<key>config</key>
+			<key>3D0116D7-BB69-4139-B322-2839D0812D7E</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>0</integer>
-				<key>fixedorder</key>
-				<true/>
-				<key>items</key>
-				<string>[{"imagefile":"e693dfeb77bb6d4f02a3766a9795dea7f7095a6c.png","title":"100 Continue","arg":"100","subtitle":"HTTP\/1.1; RFC 2616"},{"imagefile":"e693dfeb77bb6d4f02a3766a9795dea7f7095a6c.png","title":"101 Switching Protocols","arg":"101","subtitle":"HTTP\/1.1; RFC 2616"},{"imagefile":"e693dfeb77bb6d4f02a3766a9795dea7f7095a6c.png","title":"102 Processing","arg":"102","subtitle":"WebDAV; RFC 2518"},{"imagefile":"52f4d8c7f9b983c02d74b87c5e4f52aa23d87f96.png","title":"200 OK","arg":"200","subtitle":"HTTP\/1.0; HTTP\/1.1; RFC 2616"},{"imagefile":"52f4d8c7f9b983c02d74b87c5e4f52aa23d87f96.png","title":"201 Created","arg":"201","subtitle":"HTTP\/1.0; HTTP\/1.1; RFC 2616"},{"imagefile":"52f4d8c7f9b983c02d74b87c5e4f52aa23d87f96.png","title":"202 Accepted","arg":"202","subtitle":"HTTP\/1.0; HTTP\/1.1; RFC 2616"},{"imagefile":"52f4d8c7f9b983c02d74b87c5e4f52aa23d87f96.png","title":"203 Non-Authoritative Information","arg":"203","subtitle":"HTTP\/1.1; RFC 2616"},{"imagefile":"52f4d8c7f9b983c02d74b87c5e4f52aa23d87f96.png","title":"204 No Content","arg":"204","subtitle":"HTTP\/1.0; HTTP\/1.1; RFC 2616"},{"imagefile":"52f4d8c7f9b983c02d74b87c5e4f52aa23d87f96.png","title":"205 Reset Content","arg":"205","subtitle":"HTTP\/1.1; RFC 2616"},{"imagefile":"52f4d8c7f9b983c02d74b87c5e4f52aa23d87f96.png","title":"206 Partial Content","arg":"206","subtitle":"HTTP\/1.1; RFC 2616; RFC 7233"},{"imagefile":"52f4d8c7f9b983c02d74b87c5e4f52aa23d87f96.png","title":"207 Multi-Status","arg":"207","subtitle":"WebDAV; RFC 4918"},{"imagefile":"52f4d8c7f9b983c02d74b87c5e4f52aa23d87f96.png","title":"208 Already Reported","arg":"208","subtitle":"WebDAV; RFC 5842"},{"imagefile":"52f4d8c7f9b983c02d74b87c5e4f52aa23d87f96.png","title":"226 IM Used","arg":"226","subtitle":"RFC 3229"},{"imagefile":"912da0eb59cdb42f27a6c39e704a57c991210f11.png","title":"300 Multiple Choices","arg":"300","subtitle":"HTTP\/1.0; HTTP\/1.1; RFC 2616"},{"imagefile":"912da0eb59cdb42f27a6c39e704a57c991210f11.png","title":"301 Moved Permanently","arg":"301","subtitle":"HTTP\/1.0; HTTP\/1.1; RFC 2616"},{"imagefile":"912da0eb59cdb42f27a6c39e704a57c991210f11.png","title":"302 Found","arg":"302","subtitle":"HTTP\/1.1; RFC 2616"},{"imagefile":"912da0eb59cdb42f27a6c39e704a57c991210f11.png","title":"303 See Other","arg":"303","subtitle":"HTTP\/1.1; RFC 2616"},{"imagefile":"912da0eb59cdb42f27a6c39e704a57c991210f11.png","title":"304 Not Modified","arg":"304","subtitle":"HTTP\/1.0; HTTP\/1.1; RFC 2616; RFC 7232"},{"imagefile":"912da0eb59cdb42f27a6c39e704a57c991210f11.png","title":"305 Use Proxy","arg":"305","subtitle":"HTTP\/1.1; RFC 2616"},{"imagefile":"912da0eb59cdb42f27a6c39e704a57c991210f11.png","title":"306 Switch Proxy","arg":"306"},{"imagefile":"912da0eb59cdb42f27a6c39e704a57c991210f11.png","title":"307 Temporary Redirect","arg":"307","subtitle":"HTTP\/1.1; RFC 2616"},{"imagefile":"912da0eb59cdb42f27a6c39e704a57c991210f11.png","title":"308 Permanent Redirect","arg":"308","subtitle":"RFC 7538"},{"imagefile":"40a3d7f369161f74d44be256e00afeda0117a32a.png","title":"400 Bad Request","arg":"400","subtitle":"HTTP\/1.0; HTTP\/1.1; RFC 2616"},{"imagefile":"40a3d7f369161f74d44be256e00afeda0117a32a.png","title":"401 Unauthorized","arg":"401","subtitle":"HTTP\/1.0; HTTP\/1.1; RFC 2616; RFC 7235"},{"imagefile":"40a3d7f369161f74d44be256e00afeda0117a32a.png","title":"402 Payment Required","arg":"402","subtitle":"HTTP\/1.1; RFC 2616"},{"imagefile":"40a3d7f369161f74d44be256e00afeda0117a32a.png","title":"403 Forbidden","arg":"403","subtitle":"HTTP\/1.0; HTTP\/1.1; RFC 2616"},{"imagefile":"40a3d7f369161f74d44be256e00afeda0117a32a.png","title":"404 Not Found","arg":"404","subtitle":"HTTP\/1.0; HTTP\/1.1; RFC 2616"},{"imagefile":"40a3d7f369161f74d44be256e00afeda0117a32a.png","title":"405 Method Not Allowed","arg":"405","subtitle":"HTTP\/1.1; RFC 2616"},{"imagefile":"40a3d7f369161f74d44be256e00afeda0117a32a.png","title":"406 Not Acceptable","arg":"406","subtitle":"HTTP\/1.1; RFC 2616"},{"imagefile":"40a3d7f369161f74d44be256e00afeda0117a32a.png","title":"407 Proxy Authentication Required","arg":"407","subtitle":"HTTP\/1.1; RFC 2616; RFC 7235"},{"imagefile":"40a3d7f369161f74d44be256e00afeda0117a32a.png","title":"408 Request Timeout","arg":"408","subtitle":"HTTP\/1.1; RFC 2616"},{"imagefile":"40a3d7f369161f74d44be256e00afeda0117a32a.png","title":"409 Conflict","arg":"409","subtitle":"HTTP\/1.1; RFC 2616"},{"imagefile":"40a3d7f369161f74d44be256e00afeda0117a32a.png","title":"410 Gone","arg":"410","subtitle":"HTTP\/1.1; RFC 2616"},{"imagefile":"40a3d7f369161f74d44be256e00afeda0117a32a.png","title":"411 Length Required","arg":"411","subtitle":"HTTP\/1.1; RFC 2616"},{"imagefile":"40a3d7f369161f74d44be256e00afeda0117a32a.png","title":"412 Precondition Failed","arg":"412","subtitle":"HTTP\/1.1; RFC 2616; RFC 7232"},{"imagefile":"40a3d7f369161f74d44be256e00afeda0117a32a.png","title":"413 Payload Too Large","arg":"413","subtitle":"HTTP\/1.1; RFC 2616; RFC 7231"},{"imagefile":"40a3d7f369161f74d44be256e00afeda0117a32a.png","title":"414 URI Too Long","arg":"414","subtitle":"HTTP\/1.1; RFC 2616; RFC 7231"},{"imagefile":"40a3d7f369161f74d44be256e00afeda0117a32a.png","title":"415 Unsupported Media Type","arg":"415","subtitle":"HTTP\/1.1; RFC 2616"},{"imagefile":"40a3d7f369161f74d44be256e00afeda0117a32a.png","title":"416 Range Not Satisfiable","arg":"416","subtitle":"HTTP\/1.1; RFC 2616; RFC 7233"},{"imagefile":"40a3d7f369161f74d44be256e00afeda0117a32a.png","title":"417 Expectation Failed","arg":"417","subtitle":"HTTP\/1.1; RFC 2616"},{"imagefile":"40a3d7f369161f74d44be256e00afeda0117a32a.png","title":"418 I'm a teapot","arg":"418","subtitle":"RFC 2324"},{"imagefile":"40a3d7f369161f74d44be256e00afeda0117a32a.png","title":"421 Misdirected Request","arg":"421","subtitle":"RFC 7540"},{"imagefile":"40a3d7f369161f74d44be256e00afeda0117a32a.png","title":"422 Unprocessable Entity","arg":"422","subtitle":"WebDAV; RFC 4918"},{"imagefile":"40a3d7f369161f74d44be256e00afeda0117a32a.png","title":"423 Locked","arg":"423","subtitle":"WebDAV; RFC 4918"},{"imagefile":"40a3d7f369161f74d44be256e00afeda0117a32a.png","title":"424 Failed Dependency","arg":"424","subtitle":"WebDAV; RFC 4918"},{"imagefile":"40a3d7f369161f74d44be256e00afeda0117a32a.png","title":"426 Upgrade Required","arg":"426"},{"imagefile":"40a3d7f369161f74d44be256e00afeda0117a32a.png","title":"428 Precondition Required","arg":"428","subtitle":"RFC 6585"},{"imagefile":"40a3d7f369161f74d44be256e00afeda0117a32a.png","title":"429 Too Many Requests","arg":"429","subtitle":"RFC 6585"},{"imagefile":"40a3d7f369161f74d44be256e00afeda0117a32a.png","title":"431 Request Header Fields Too Large","arg":"431","subtitle":"RFC 6585"},{"imagefile":"40a3d7f369161f74d44be256e00afeda0117a32a.png","title":"451 Unavailable For Legal Reasons","arg":"451"},{"imagefile":"4fd2f6e58877424c90a92e44a61aef61eee99998.png","title":"500 Internal Server Error","arg":"500","subtitle":"HTTP\/1.0; HTTP\/1.1; RFC 2616"},{"imagefile":"4fd2f6e58877424c90a92e44a61aef61eee99998.png","title":"501 Not Implemented","arg":"501","subtitle":"HTTP\/1.0; HTTP\/1.1; RFC 2616"},{"imagefile":"4fd2f6e58877424c90a92e44a61aef61eee99998.png","title":"502 Bad Gateway","arg":"502","subtitle":"HTTP\/1.0; HTTP\/1.1; RFC 2616"},{"imagefile":"4fd2f6e58877424c90a92e44a61aef61eee99998.png","title":"503 Service Unavailable","arg":"503","subtitle":"HTTP\/1.0; HTTP\/1.1; RFC 2616"},{"imagefile":"4fd2f6e58877424c90a92e44a61aef61eee99998.png","title":"504 Gateway Timeout","arg":"504","subtitle":"HTTP\/1.1; RFC 2616"},{"imagefile":"4fd2f6e58877424c90a92e44a61aef61eee99998.png","title":"505 HTTP Version Not Supported","arg":"505","subtitle":"HTTP\/1.1; RFC 2616"},{"imagefile":"4fd2f6e58877424c90a92e44a61aef61eee99998.png","title":"506 Variant Also Negotiates","arg":"506","subtitle":"RFC 2295"},{"imagefile":"4fd2f6e58877424c90a92e44a61aef61eee99998.png","title":"507 Insufficient Storage","arg":"507","subtitle":"WebDAV; RFC 4918"},{"imagefile":"4fd2f6e58877424c90a92e44a61aef61eee99998.png","title":"508 Loop Detected","arg":"508","subtitle":"WebDAV; RFC 5842"},{"imagefile":"4fd2f6e58877424c90a92e44a61aef61eee99998.png","title":"510 Not Extended","arg":"510","subtitle":"RFC 2774"},{"imagefile":"4fd2f6e58877424c90a92e44a61aef61eee99998.png","title":"511 Network Authentication Required","arg":"511","subtitle":"RFC 6585"}]</string>
-				<key>keyword</key>
-				<string>http</string>
-				<key>runningsubtext</key>
-				<string></string>
-				<key>subtext</key>
-				<string>Enter a status code or value to view details.</string>
-				<key>title</key>
-				<string>HTTP Status</string>
-				<key>withspace</key>
-				<true/>
+				<key>xpos</key>
+				<integer>450</integer>
+				<key>ypos</key>
+				<integer>170</integer>
 			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.listfilter</string>
-			<key>uid</key>
-			<string>57D47D53-06C7-45E4-99ED-BE53CD7C3E70</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
+			<key>57D47D53-06C7-45E4-99ED-BE53CD7C3E70</key>
 			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string>https://httpstatuses.com/{query}</string>
-				<key>utf8</key>
-				<true/>
+				<key>xpos</key>
+				<integer>200</integer>
+				<key>ypos</key>
+				<integer>170</integer>
 			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>3D0116D7-BB69-4139-B322-2839D0812D7E</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-	</array>
-	<key>uidata</key>
-	<dict>
-		<key>3D0116D7-BB69-4139-B322-2839D0812D7E</key>
-		<dict>
-			<key>xpos</key>
-			<integer>450</integer>
-			<key>ypos</key>
-			<integer>170</integer>
-		</dict>
-		<key>57D47D53-06C7-45E4-99ED-BE53CD7C3E70</key>
-		<dict>
-			<key>xpos</key>
-			<integer>200</integer>
-			<key>ypos</key>
-			<integer>170</integer>
 		</dict>
 	</dict>
-</dict>
 </plist>
