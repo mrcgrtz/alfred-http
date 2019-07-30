@@ -87,22 +87,5 @@
 				</dict>
 			</array>
 		</dict>
-		<key>uidata</key>
-		<dict>
-			<key>3D0116D7-BB69-4139-B322-2839D0812D7E</key>
-			<dict>
-				<key>xpos</key>
-				<integer>450</integer>
-				<key>ypos</key>
-				<integer>170</integer>
-			</dict>
-			<key>57D47D53-06C7-45E4-99ED-BE53CD7C3E70</key>
-			<dict>
-				<key>xpos</key>
-				<integer>200</integer>
-				<key>ypos</key>
-				<integer>170</integer>
-			</dict>
-		</dict>
 	</dict>
 </plist>
