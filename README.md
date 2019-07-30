@@ -5,13 +5,13 @@ Opens [httpstatuses.com](https://httpstatuses.com/) for more details.
 
 ## Install
 
-Download the [http-status.alfredworkflow](https://github.com/Dreamseer/alfred-http/raw/master/http-status.alfredworkflow) file and double-click to install.
+Download the [http-status.alfredworkflow](https://github.com/Dreamseer/alfred-http/raw/master/dist/http-status.alfredworkflow) file and double-click to install.
 
 ## Usage
 
 Open Alfred and type `http`.
 
-## Screenshots
+## Screenshot
 
 ![HTTP Status Code](https://raw.githubusercontent.com/Dreamseer/alfred-http/master/screenshot.png)
 

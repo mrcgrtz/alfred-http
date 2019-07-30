@@ -2,10 +2,22 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+  <key>version</key>
+  <string>1.1</string>
+  <key>name</key>
+  <string>HTTP Status</string>
+  <key>description</key>
+  <string>HTTP Status Codes</string>
+  <key>readme</key>
+  <string>An Alfred workflow to quickly lookup HTTP status codes.</string>
+  <key>category</key>
+  <string>Internet</string>
+  <key>createdby</key>
+  <string>Marc Görtz</string>
+  <key>webaddress</key>
+  <string>https://marcgoertz.de/</string>
 	<key>bundleid</key>
 	<string>de.marcgoertz.http</string>
-	<key>category</key>
-	<string>Internet</string>
 	<key>connections</key>
 	<dict>
 		<key>3D0116D7-BB69-4139-B322-2839D0812D7E</key>
@@ -24,14 +36,8 @@
 			</dict>
 		</array>
 	</dict>
-	<key>createdby</key>
-	<string>Marc Görtz</string>
-	<key>description</key>
-	<string>HTTP Status Codes</string>
 	<key>disabled</key>
 	<false/>
-	<key>name</key>
-	<string>HTTP Status</string>
 	<key>objects</key>
 	<array>
 		<dict>
@@ -81,8 +87,6 @@
 			<integer>1</integer>
 		</dict>
 	</array>
-	<key>readme</key>
-	<string>An Alfred workflow to quickly lookup HTTP status codes.</string>
 	<key>uidata</key>
 	<dict>
 		<key>3D0116D7-BB69-4139-B322-2839D0812D7E</key>
@@ -100,9 +104,5 @@
 			<integer>170</integer>
 		</dict>
 	</dict>
-	<key>version</key>
-	<string>1.1</string>
-	<key>webaddress</key>
-	<string>https://marcgoertz.de/</string>
 </dict>
 </plist>
