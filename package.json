@@ -11,7 +11,7 @@
     "workflow"
   ],
   "engines": {
-    "node": ">=10"
+    "node": ">=12"
   },
   "files": [
     "index.js"
@@ -28,6 +28,9 @@
   "license": "MIT",
   "devDependencies": {
     "gulp": "^4.0.2",
+    "gulp-clean": "^0.4.0",
+    "gulp-copy": "^4.0.1",
+    "gulp-string-replace": "^1.1.2",
     "gulp-vinyl-zip": "^2.1.2",
     "xo": "^0.24.0"
   },
