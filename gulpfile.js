@@ -14,7 +14,6 @@ gulp.task('copy', () => gulp.src('./src/**/*')
 
 gulp.task('build', gulp.series('cleanup', 'copy', () => gulp.src('./build/info.plist')
 	.pipe(replace('%status-codes%', () => {
-		// eslint-disable-next-line import/no-unresolved
 		const data = require('./build/status-codes.json');
 		return JSON.stringify(data);
 	}))
