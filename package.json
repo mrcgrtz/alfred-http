@@ -31,8 +31,8 @@
     "gulp-clean": "^0.4.0",
     "gulp-copy": "^4.0.1",
     "gulp-string-replace": "^1.1.2",
-    "gulp-vinyl-zip": "^2.1.2",
-    "xo": "^0.37.1"
+    "gulp-vinyl-zip": "^2.2.1",
+    "xo": "^0.40.1"
   },
   "scripts": {
     "build": "gulp",
