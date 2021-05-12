@@ -1,8 +1,12 @@
-const gulp = require('gulp');
-const clean = require('gulp-clean');
-const copy = require('gulp-copy');
-const replace = require('gulp-string-replace');
-const {zip} = require('gulp-vinyl-zip');
+// Gulp and its plugins
+import gulp from 'gulp';
+import clean from 'gulp-clean';
+import copy from 'gulp-copy';
+import replace from 'gulp-string-replace';
+import vinyl from 'gulp-vinyl-zip';
+
+// Data
+import statusCodes from './src/status-codes.js';
 
 gulp.task('cleanup', () => gulp.src('./build', {read: false, allowEmpty: true})
 	.pipe(clean())
@@ -13,16 +17,13 @@ gulp.task('copy', () => gulp.src('./src/**/*')
 );
 
 gulp.task('build', gulp.series('cleanup', 'copy', () => gulp.src('./build/info.plist')
-	.pipe(replace('%status-codes%', () => {
-		const data = require('./build/status-codes.json');
-		return JSON.stringify(data);
-	}))
+	.pipe(replace('%status-codes%', () => JSON.stringify(statusCodes)))
 	.pipe(gulp.dest('build'))
 ));
 
 gulp.task('zip', () =>
 	gulp.src('./build/**/*')
-		.pipe(zip('http-status.alfredworkflow'))
+		.pipe(vinyl.zip('http-status.alfredworkflow'))
 		.pipe(gulp.dest('dist'))
 );
 
