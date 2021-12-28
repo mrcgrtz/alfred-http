@@ -11,16 +11,13 @@
     "workflow"
   ],
   "engines": {
-    "node": ">=12"
+    "node": ">=16"
   },
   "type": "module",
   "files": [
     "index.js"
   ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Dreamseer/alfred-http.git"
-  },
+  "repository": "github:mrcgrtz/alfred-http",
   "author": {
     "name": "Marc Görtz",
     "email": "git@marcgoertz.de",
