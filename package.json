@@ -29,7 +29,7 @@
     "gulp-clean": "^0.4.0",
     "gulp-copy": "^4.0.1",
     "gulp-string-replace": "^1.1.2",
-    "gulp-vinyl-zip": "^2.2.1",
+    "gulp-vinyl-zip": "^2.5.0",
     "xo": "^0.58.0"
   },
   "scripts": {
