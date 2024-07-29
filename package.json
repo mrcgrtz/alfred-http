@@ -30,7 +30,7 @@
     "gulp-copy": "^4.0.1",
     "gulp-string-replace": "^1.1.2",
     "gulp-vinyl-zip": "^2.5.0",
-    "xo": "^0.59.0"
+    "xo": "^0.59.3"
   },
   "scripts": {
     "build": "gulp",
