@@ -1,8 +1,22 @@
 {
   "name": "alfred-http",
   "version": "1.3.0",
-  "description": "An Alfred workflow to quickly lookup HTTP status codes.",
   "private": true,
+  "description": "An Alfred workflow to quickly lookup HTTP status codes.",
+  "license": "MIT",
+  "repository": "github:mrcgrtz/alfred-http",
+  "author": "Marc Görtz <git@marcgoertz.de> (https://marcgoertz.de/)",
+  "type": "module",
+  "engines": {
+    "node": ">=16"
+  },
+  "scripts": {
+    "build": "gulp",
+    "test": "xo"
+  },
+  "files": [
+    "index.js"
+  ],
   "keywords": [
     "alfred",
     "alfred-workflow",
@@ -10,30 +24,12 @@
     "http-status",
     "workflow"
   ],
-  "engines": {
-    "node": ">=16"
-  },
-  "type": "module",
-  "files": [
-    "index.js"
-  ],
-  "repository": "github:mrcgrtz/alfred-http",
-  "author": {
-    "name": "Marc Görtz",
-    "email": "git@marcgoertz.de",
-    "url": "https://marcgoertz.de/"
-  },
-  "license": "MIT",
   "devDependencies": {
     "gulp": "^5.0.1",
     "gulp-clean": "^0.4.0",
     "gulp-copy": "^5.0.0",
     "gulp-string-replace": "^1.1.2",
     "gulp-vinyl-zip": "^2.5.0",
-    "xo": "^4.0.0"
-  },
-  "scripts": {
-    "build": "gulp",
-    "test": "xo"
+    "xo": "^5.0.1"
   }
 }
